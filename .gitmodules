@@ -4,5 +4,5 @@
 	branch = main
 [submodule "structurizr-lite"]
 	path = structurizr-lite
-	url = https://github.com/structurizr/lite.git
+	url = https://github.com/Henri-J-Norden/structurizr-lite.git
 	branch = main
