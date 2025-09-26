@@ -1,0 +1,8 @@
+[submodule "structurizr-ui"]
+	path = structurizr-ui
+	url = https://github.com/Henri-J-Norden/structurizr-ui.git
+	branch = main
+[submodule "structurizr-lite"]
+	path = structurizr-lite
+	url = https://github.com/structurizr/lite.git
+	branch = main
