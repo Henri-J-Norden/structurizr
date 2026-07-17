@@ -5,10 +5,10 @@
 [Official instructions](https://docs.structurizr.com/lite/building)
 
 ### Using docker
-```bash
+```sh
 export MSYS_NO_PATHCONV=1  # If using MinGW on Windows
 
-cd structurizr-lite
+pushd structurizr-lite
 sh ui.sh
 #./gradlew clean build
 
@@ -21,7 +21,13 @@ popd
 
 # Create Docker image
 TAG="structurizr/lite:latest"
-#DATA_DIR="/path/to/dataDirectory"
-docker build . -t $TAG
+docker build . -t $TAG --load
+popd
+```
+
+```sh
+# Finally, run locally
+TAG="structurizr/lite:latest"
+DATA_DIR="./data"
 docker run -it --rm -p 8080:8080 -v $DATA_DIR:/usr/local/structurizr $TAG
 ```
