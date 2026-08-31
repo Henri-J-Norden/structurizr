@@ -6,3 +6,6 @@
 	path = structurizr-lite
 	url = https://github.com/Henri-J-Norden/structurizr-lite.git
 	branch = main
+[submodule "structurizr-java"]
+	path = structurizr-java
+	url = https://github.com/Henri-J-Norden/structurizr-java.git
